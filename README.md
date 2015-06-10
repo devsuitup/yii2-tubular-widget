@@ -26,7 +26,7 @@ to the require section of your `composer.json` file.
 
 Once the extension is installed, simply use it in your code like for instance in the examples below.
 
-**Start a slideshow on the background of element #elementId**. 
+**Start a video on the background of element .youtube_wrapper**. 
 
 This is the simplest approach. The argument is the youtube video code you want to use as a background.
 In order to be visible (and manage z-index), all visible content should be wrapped into an element with class .youtube_wrapper
@@ -49,9 +49,21 @@ the plugin.
 	]);
 ```
 
+** Include the wrapper into your layout **
+
+The easiest way to integrate the wrapper, is to add it's class to your yii2 layout in /views/layouts/main.php . So that all the content will be visible over the background video.
+There is an example where we added youtube_wrapper class to the default layout provided by yii2. 
+
+```html
+<body>
+    <?php $this->beginBody() ?>
+    <div class="wrap youtube_wrapper">
+    ...
+```
+
 For complete documentation please refer to the [jquery-tubular  page](http://www.seanmccambridge.com/tubular/)
 
-##Howto Fallback on mobile and tablets?
+##Howto fallback on mobile and tablets?
 
 By design, most mobile phones and tablets (depending on the os / browser), won't be able to play the youtube video. The result will be a black background. The video won't be able to autoplay and there is not much we can do about this.
 
