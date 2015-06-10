@@ -49,7 +49,7 @@ the plugin.
 	]);
 ```
 
-** Include the wrapper into your layout **
+**Include the wrapper into your layout**
 
 The easiest way to integrate the wrapper, is to add it's class to your yii2 layout in /views/layouts/main.php . So that all the content will be visible over the background video.
 There is an example where we added youtube_wrapper class to the default layout provided by yii2. 
