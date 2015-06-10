@@ -1,0 +1,22 @@
+{
+  "name": "jquery.tubular",
+  "title": "Tubular",
+  "description": "A simple jQuery plugin that allows you to add a dynamically-resized, background video to any page.",
+  "version": "1.0.1",
+  "homepage": "http://www.seanmccambridge.com/tubular/",
+  "author": {
+    "name": "Sean McCambridge",
+    "email": "seanmccambridge@gmail.com",
+    "url": "http://www.seanmccambridge.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7"
+  },
+  "keywords": []
+}

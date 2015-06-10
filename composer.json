@@ -1,0 +1,25 @@
+{
+	"name" : "julien101/yii2-tubular-widget",
+	"description" : "Wrapper around the Tubular JQuery plugin",
+	"type" : "yii2-extension",
+	"keywords" : [
+		"yii2",
+		"extension",
+		"background",
+		"video"
+	],
+	"license" : "BSD-3-Clause",
+	"authors" : [{
+			"name" : "Julien Muller",
+			"email" : "julien.muller@gmail.com"
+		}
+	],
+	"require" : {
+		"yiisoft/yii2" : "*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"julien101\\widget\\tubular\\" : ""
+		}
+	}
+}
