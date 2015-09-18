@@ -21,7 +21,7 @@
   },
   "autoload" : {
 	"psr-4" : {
-	  "julient101\\widget\\tubular\\" : ""
+	  "julien101\\widget\\tubular\\" : ""
 	}
   }
 }

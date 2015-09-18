@@ -22,6 +22,7 @@ class Tubular extends Widget
 	 */
 	public $selector = '.youtube_wrapper';
 	public $youtubecode;
+    public $onBefore;
 	
 	/**
 	 * Validate initialisation properties.
@@ -48,9 +49,12 @@ class Tubular extends Widget
 	 */
 	public function registerClientScript()
 	{
-		$js=  '$("'.$this->selector.'")';
-		$js.= '.tubular({videoId: \'' . $this->youtubecode .'\'});alert("mine!");';
-		
+        $js=  '$("'.$this->selector.'")';
+        $js.= '.tubular({videoId: \'' . $this->youtubecode .'\'});alert("mine!");';
+
+        if (!is_null($this->onBefore)) {
+            $js= 'if ('.$this->onBefore.') {'.$js.'}';
+        }
 		$view = $this->getView();
 		TubularAsset::register($view);
 		$view->registerJs($js);
