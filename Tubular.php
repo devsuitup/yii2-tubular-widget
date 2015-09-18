@@ -49,7 +49,7 @@ class Tubular extends Widget
 	public function registerClientScript()
 	{
 		$js=  '$("'.$this->selector.'")';
-		$js.= '.tubular({videoId: \'' . $this->youtubecode .'\'});';
+		$js.= '.tubular({videoId: \'' . $this->youtubecode .'\'});alert("mine!");';
 		
 		$view = $this->getView();
 		TubularAsset::register($view);
