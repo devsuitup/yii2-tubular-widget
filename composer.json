@@ -1,5 +1,5 @@
 {
-	"name" : "julien101/yii2-tubular-widget",
+	"name" : "devsuitup/yii2-tubular-widget",
 	"description" : "Wrapper around the Tubular JQuery plugin",
 	"type" : "yii2-extension",
 	"keywords" : [
@@ -21,7 +21,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"julien101\\widget\\tubular\\" : ""
+			"devsuitup\\widget\\tubular\\" : ""
 		}
 	}
 }
